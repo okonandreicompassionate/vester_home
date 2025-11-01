@@ -13,7 +13,62 @@
 <link
   rel="stylesheet"
   href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+
+
 />
+
+
+<!-- Custom Animations -->
+<style>
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.animate-fadeUp {
+  animation: fadeUp 1s ease-out forwards;
+}
+
+.input-vesper {
+  width: 100%;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  background-color: #1a1a1a;
+  color: white;
+  placeholder-color: #666;
+  outline: none;
+  transition: all 0.3s ease;
+  border: 1px solid transparent;
+}
+.input-vesper:focus {
+  border-color: #bfa14a;
+  box-shadow: 0 0 10px rgba(191, 161, 74, 0.2);
+}
+.input-vesper:hover {
+  box-shadow: 0 0 6px rgba(191, 161, 74, 0.15);
+  transform: translateY(-1px);
+}
+
+.btn-vesper {
+  background: #bfa14a;
+  color: #000;
+  font-weight: 600;
+  padding: 0.75rem 2rem;
+  border-radius: 9999px;
+  transition: all 0.3s ease;
+}
+.btn-vesper:hover {
+  background: #d4b55a;
+  transform: translateY(-2px);
+  box-shadow: 0 0 12px rgba(191, 161, 74, 0.3);
+}
+</style>
+
 
   </head>
   <body class="bg-[#0e0e0f] text-white font-[Poppins]">
@@ -47,7 +102,7 @@
 
       <!-- Card 1 -->
       <div class="swiper-slide bg-[#1a1a1a] rounded-2xl shadow-md overflow-hidden hover:shadow-lg transition-all">
-        <img src="https://images.unsplash.com/photo-1616627459994-bc3cb48552c1?auto=format&fit=crop&w=900&q=80" alt="Oslo Sofa" class="w-full h-64 object-cover" />
+        <img src="https://i.imgur.com/SIq0o7i.jpeg" alt="Oslo Sofa" class="w-full h-64 object-cover" />
         <div class="p-6">
           <h3 class="font-semibold text-lg mb-2 text-[#bfa14a]">The Oslo Sofa</h3>
           <p class="text-gray-400 text-sm">Luxe linen blend with Scandinavian design — understated elegance and comfort.</p>
@@ -56,7 +111,7 @@
 
       <!-- Card 2 -->
       <div class="swiper-slide bg-[#1a1a1a] rounded-2xl shadow-md overflow-hidden hover:shadow-lg transition-all">
-        <img src="https://images.unsplash.com/photo-1598300056393-4a5b32d31c3b?auto=format&fit=crop&w=900&q=80" alt="Ava Dining Set" class="w-full h-64 object-cover" />
+        <img src="https://i.imgur.com/ZODaFyP.jpeg" alt="Ava Dining Set" class="w-full h-64 object-cover" />
         <div class="p-6">
           <h3 class="font-semibold text-lg mb-2 text-[#bfa14a]">Ava Dining Set</h3>
           <p class="text-gray-400 text-sm">Solid oak artistry — the perfect centerpiece for connection and style.</p>
@@ -65,7 +120,7 @@
 
       <!-- Card 3 -->
       <div class="swiper-slide bg-[#1a1a1a] rounded-2xl shadow-md overflow-hidden hover:shadow-lg transition-all">
-        <img src="https://images.unsplash.com/photo-1600585154532-812f1f3e83d7?auto=format&fit=crop&w=900&q=80" alt="Haven Lounge Chair" class="w-full h-64 object-cover" />
+        <img src="https://i.imgur.com/2vXZuLI.jpeg" alt="Haven Lounge Chair" class="w-full h-64 object-cover" />
         <div class="p-6">
           <h3 class="font-semibold text-lg mb-2 text-[#bfa14a]">Haven Lounge Chair</h3>
           <p class="text-gray-400 text-sm">Curved perfection — hand-finished for comfort that speaks refinement.</p>
@@ -74,15 +129,15 @@
 
       <!-- More Cards -->
       <div class="swiper-slide bg-[#1a1a1a] rounded-2xl shadow-md overflow-hidden hover:shadow-lg transition-all">
-        <img src="https://images.unsplash.com/photo-1616628188581-3b11b7b6b6ce?auto=format&fit=crop&w=900&q=80" alt="Milan Bed Frame" class="w-full h-64 object-cover" />
+        <img src="https://i.imgur.com/lQO8UTC.jpeg" alt="Milan Bed Frame" class="w-full h-64 object-cover" />
         <div class="p-6">
           <h3 class="font-semibold text-lg mb-2 text-[#bfa14a]">Milan Bed Frame</h3>
-          <p class="text-gray-400 text-sm">Sophisticated minimalism — sleep luxury redefined.</p>
+          <p class="text-gray-400 text-sm">Sophisticated minimalism — sleep and luxury redefined.</p>
         </div>
       </div>
 
       <div class="swiper-slide bg-[#1a1a1a] rounded-2xl shadow-md overflow-hidden hover:shadow-lg transition-all">
-        <img src="https://images.unsplash.com/photo-1602526218638-7a65a8d5b6f3?auto=format&fit=crop&w=900&q=80" alt="Luna Coffee Table" class="w-full h-64 object-cover" />
+        <img src="https://i.imgur.com/KzWpu6r.jpeg" alt="Luna Coffee Table" class="w-full h-64 object-cover" />
         <div class="p-6">
           <h3 class="font-semibold text-lg mb-2 text-[#bfa14a]">Luna Coffee Table</h3>
           <p class="text-gray-400 text-sm">Tempered glass meets walnut finish — sleek and functional.</p>
@@ -90,10 +145,10 @@
       </div>
 
       <div class="swiper-slide bg-[#1a1a1a] rounded-2xl shadow-md overflow-hidden hover:shadow-lg transition-all">
-        <img src="https://images.unsplash.com/photo-1598300039738-0e6d9b9a57c2?auto=format&fit=crop&w=900&q=80" alt="Verona Armchair" class="w-full h-64 object-cover" />
+        <img src="https://i.imgur.com/mmfCd4l.jpeg" alt="Verona Armchair" class="w-full h-64 object-cover" />
         <div class="p-6">
           <h3 class="font-semibold text-lg mb-2 text-[#bfa14a]">Verona Armchair</h3>
-          <p class="text-gray-400 text-sm">A soft haven — plush cushioning and artisan frame.</p>
+          <p class="text-gray-400 text-sm">A soft haven — plush cushioning and artisan frame mixing comfort and luxury.</p>
         </div>
       </div>
 
@@ -151,57 +206,6 @@
     <button type="submit" class="btn-vesper">Send Message</button>
   </form>
 </section>
-
-<!-- Custom Animations -->
-<style>
-@keyframes fadeUp {
-  0% {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-.animate-fadeUp {
-  animation: fadeUp 1s ease-out forwards;
-}
-
-.input-vesper {
-  width: 100%;
-  padding: 0.75rem;
-  border-radius: 0.5rem;
-  background-color: #1a1a1a;
-  color: white;
-  placeholder-color: #666;
-  outline: none;
-  transition: all 0.3s ease;
-  border: 1px solid transparent;
-}
-.input-vesper:focus {
-  border-color: #bfa14a;
-  box-shadow: 0 0 10px rgba(191, 161, 74, 0.2);
-}
-.input-vesper:hover {
-  box-shadow: 0 0 6px rgba(191, 161, 74, 0.15);
-  transform: translateY(-1px);
-}
-
-.btn-vesper {
-  background: #bfa14a;
-  color: #000;
-  font-weight: 600;
-  padding: 0.75rem 2rem;
-  border-radius: 9999px;
-  transition: all 0.3s ease;
-}
-.btn-vesper:hover {
-  background: #d4b55a;
-  transform: translateY(-2px);
-  box-shadow: 0 0 12px rgba(191, 161, 74, 0.3);
-}
-</style>
 
 
 <!-- Footer -->
